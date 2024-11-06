@@ -48,11 +48,11 @@ const DiscordCommunity = ({ className }:{ className?: string }) => {
                 hover:bg-from-discord-400 hover:to-zinc-950
                 border-2 border-discord-300
                 group">
-                <Circle className="absolute top-0 right-0 h-full w-full z-10 opacity-0
+                <Circle className="absolute top-0 right-0 h-8 w-8 z-10 opacity-0
                     text-transparent bg-gradient-radial from-white to-transparent
                     group-hover:opacity-35 transition-opacity duration-300" />
                 <Image className="rounded-[19px] z-40"
-                    src="/assets/logos/white_fire_on_red_square.svg"
+                    src="/assets/logos/CodeDevils-Discord.svg"
                     alt="CodeDevils Discord Logo"
                     width={80}
                     height={80}

@@ -1,0 +1,128 @@
+# Contributing Guidelines and Git Flow
+
+This document plans to outline the following for _all_ contributors of the CodeDevils Academy project. Please follow these guidelines to the best of your knowledge and understanding, and feel free to message `Pita` in the CodeDevils `#cd-academy` Discord channel if you have any questions or need help!
+
+### Table of Contents
+
+1. [Leadership](#leadership)
+1. [Git Flow](#git-flow)
+   - [Workflow Overview](#Overview)
+   - [Available Issues](#Available-Issues)
+   - [Issue Branch](#Issue-Branch)
+   - [Commits and Pull Requests](#commits-and-pull-requests)
+   - [Main vs Dev Branch](#main-vs-dev-branch)
+1. [Setup Development Environment](#setup-development-environment)
+1. [Other Resources](#other-resources)
+
+---
+
+<br/>
+
+# Leadership
+
+The CodeDevils Academy project managers are Pita Sherwood ([@PitaFLAME](https://github.com/PitaFLAME)) and Frankie Lin ([@frankjlin16](https://github.com/frankjlin16)). They control the day-to-day operation of this project, with oversight and policy dictated by the CodeDevil Officers.
+
+> To check out the projects and project leads, check out codedevils.org/projects
+
+<br/>
+
+# Git Flow
+
+Forking is not necessary - use the origin repo's branches for your own code bases. You have full control over your own development branches and Git flow. That said, there are some general guidelines you need to follow.
+
+## Overview
+
+#### Available Issues
+
+When you want to work on the project, start with the GitHub Issues page.  This is where we'll post available work for contributors.  Each issue will have difficulty and field tags, as well as what the actual changes will entail.  
+
+If you see an issue that you'd like to work on, go to the issue and comment on it saying that you'd like to work it.  If you've done that, you've essentially 'claimed' the issue.  The project lead will assign the issue to you, and you can begin working on the issue!
+
+#### Issue Branch
+
+When you have an issue that you are working, you must start by creating an Issue Branch.  When naming the branch, follow this naming convention:
+``` <TYPE>/<ISSUE-ID>/<SHORT-DESCRIPTION> ```
+
+Your branch's TYPE must be one of the following:
+- Fix - for issues that address errors, bugs, or broken things
+- Update - for changes and maintenance
+- Feature - for issues that request new content
+- Refactor - for issues that optimize the code
+- Style - for issues that make the code more readable, clean, or otherwise pretty
+
+Some example branch names:
+
+```refactor/102/optimize-api-code```
+
+```feature/89/add-welcome-section```
+
+```fix/110/fix-org-link ```
+
+
+#### Commits
+
+To the best of your ability, please try to keep the commits to your Issue Branch as few as possible.  If there end up being a lot of commits on your branch, please squash them before you create your Pull Request.
+
+Your Commits do not have any requirements for their naming convention, other than being vaguely relevant to the actions taken.  They need not be anything more than a short description of your changes
+
+#### Pull Requests
+
+After you have finished working on an Issue and you have a finished version of your code, commit it to your branch, and create a Pull Request to merge your Issue Branch to `dev`.
+
+Your Pull Requests have some requirements for documentation.  They must include:
+- An explanation of the changes you made.
+   - For issues tagged "simple", this need not be very detailed, but just a note of what you did.
+   - For issues with no complexity tag, give a reasonable explanation for the changes you made.  It should be comprehensive.  You are welcome to mention anything interesting about your solution.
+   - For issues tagged "complex", you MUST explain why you made any choices that you did for how you approached the issue, in addition to a reasonable explanation for your changes.
+- You must link the issue that you are working on at the end of the Pull Request.  To do this, you must type a '#' character, and follow it with the Issue Number.  This will indicate on the Issue itself that this Pull Request resolves it.  For example, if you are working issue 99, you need to end your Pull Request with '#99'
+
+
+#### Main vs Dev Branch
+
+The `main` branch is the _production code_ that CodeDevils Academy is currently operating on. Whatever is in `main` is what will be on the internet. Contributors should never make a Pull Request to merge directly to `main`.
+
+The `dev` branch is where all Pull Requests should point to.  When creating a new branch, stem from `dev`.  When creating a Pull Request, merge to `dev`.  After enough time, or after a sprint, the changes in `dev` will be merged to `main` by the Project Lead.
+
+<br/>
+
+# Setup Development Environment
+
+## Requirements
+
+- pnpm - [Install Instructions](https://pnpm.io/installation)
+- Node.js - [Install Instructions](https://nodejs.org/en/)
+
+Alternatively, you can install both requirements with a package manager - [homebrew](https://brew.sh/) (macOS) or [chocolatey](https://chocolatey.org/) (Windows).
+
+## Getting Started
+
+Once you have node.js and a package manager installed, it is time to install the packages/dependencies.
+
+```
+pnpm install
+```
+
+Now you can start the development server with the following command:
+
+```
+pnpm dev
+```
+Any changes you make to the code will be reflected in your local deployment.
+
+---
+
+
+<br/>
+
+
+## Other Resources
+
+- Installing Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- Git Basics: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+- GitHub - Creating a Pull Request: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+- A full project guide that uses our stack: https://www.youtube.com/watch?v=SG82Aqcaaa0
+- Learn React: https://www.youtube.com/watch?v=Rh3tobg7hEo
+- Learn TailwindCSS: https://www.youtube.com/watch?v=24hFVa3hgVw
+- Learn Next.js: https://www.youtube.com/watch?v=ZjAqacIC_3c
+- Learn Next.js: https://www.youtube.com/watch?v=eZJJ189JTks
+- Learn MongoDB: https://www.youtube.com/watch?v=_8SN9jw9MJo

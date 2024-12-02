@@ -52,7 +52,7 @@ const DiscordCommunity = ({ className }:{ className?: string }) => {
                     text-transparent bg-gradient-radial from-white to-transparent
                     group-hover:opacity-35 transition-opacity duration-300" />
                 <Image className="rounded-[19px] z-40"
-                    src="/assets/logos/CodeDevils-Discord.png"
+                    src="/assets/logos/CodeDevils-Discord.svg"
                     alt="CodeDevils Discord Logo"
                     width={80}
                     height={80}
